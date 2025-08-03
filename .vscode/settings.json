@@ -16,7 +16,7 @@
 	"github.copilot.inlineSuggest.enable": true,
 	"github.copilot.editor.enableCodeActions": true,
 	"github.copilot.chat.followUps": "on",
-	"github.copilot.chat.welcomeMessage": "always",
+	"github.copilot.chat.welcomeMessage": "false",
 	"github.copilot.editor.iterativeFixing": true,
 	"github.copilot.advanced": {
 		"listCount": 10,
@@ -28,19 +28,16 @@
 	},
 	"github.copilot.conversation.localeOverride": "de",
 	"github.copilot.renameSuggestions.triggerAutomatically": true,
-	"github.copilot.preferredAccount": "*",
 	"files.associations": {
 		"*.lua": "luau",
 		"*.luau": "luau",
 		"*.server.lua": "luau",
 		"*.client.lua": "luau",
 		"*.rbxs": "luau",
-		"*.rbxl": "luau",
-		"*.rbxlx": "luau",
-		"*.rbxm": "luau",
-		"*.rbxmx": "luau"
+		"*.rbxlx": "xml",
+		"*.rbxmx": "xml"
 	},
-		"luau-lsp.require.mode": "relativeToFile",
+	"luau-lsp.require.mode": "relativeToFile",
 	"luau-lsp.diagnostics.enable": true,
 	"luau-lsp.diagnostics.workspace": true,
 	"luau-lsp.completion.imports.enabled": true,
@@ -56,10 +53,6 @@
 	"luau-lsp.completion.fillCallParens": true,
 	"luau-lsp.completion.addTabstopAfterCallParens": true,
 	"luau-lsp.completion.imports.requireStyle": "alwaysRelative",
-	"robloxLsp.diagnostics.enable": true,
-	"robloxLsp.completion.enable": true,
-	"robloxLsp.hover.enable": true,
-	"robloxLsp.signatureHelp.enable": true,
 	"stylua.searchParentDirectories": true,
 	"stylua.verify": true,
 	"[luau]": {
@@ -82,7 +75,7 @@
 	"editor.suggestSelection": "first",
 	"editor.quickSuggestions": {
 		"other": "on",
-		"comments": "on",
+		"comments": "off",
 		"strings": "on"
 	},
 	"editor.quickSuggestionsDelay": 10,
@@ -91,7 +84,7 @@
 	"editor.wordBasedSuggestions": "allDocuments",
 	"editor.wordBasedSuggestionsMode": "matchingDocuments",
 	"editor.parameterHints.enabled": true,
-	"editor.suggest.snippetsPreventQuickSuggestions": false,
+	"editor.suggest.snippetsPreventQuickSuggestions": true,
 	"editor.suggest.localityBonus": true,
 	"editor.suggest.shareSuggestSelections": true,
 	"editor.suggest.showStatusBar": true,
@@ -113,7 +106,6 @@
 		"**/build/**": true
 	},
 	"workbench.editor.enablePreview": false,
-	"workbench.iconTheme": "roblox-vscode-icon-theme",
 	"explorer.fileNesting.enabled": true,
 	"explorer.fileNesting.patterns": {
 		"*.lua": "${capture}.server.lua, ${capture}.client.lua",

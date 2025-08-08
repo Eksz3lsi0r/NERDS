@@ -1,119 +1,99 @@
 {
-	"workbench.colorTheme": "Solarized Dark",
 	"github.copilot.enable": {
 		"*": true,
-		"luau": true,
-		"lua": true,
-		"roblox": true,
+		"plaintext": true,
 		"markdown": true,
-		"json": true,
-		"jsonc": true,
-		"toml": true,
-		"yaml": true
+		"lua": true,
+		"luau": true,
+		"scminput": true
 	},
-	"github.copilot.editor.enableAutoCompletions": true,
-	"github.copilot.chat.enabled": true,
-	"github.copilot.inlineSuggest.enable": true,
-	"github.copilot.editor.enableCodeActions": true,
-	"github.copilot.chat.followUps": "on",
-	"github.copilot.chat.welcomeMessage": "false",
-	"github.copilot.editor.iterativeFixing": true,
+	"github.copilot.chat.localeOverride": "de",
 	"github.copilot.advanced": {
-		"listCount": 10,
-		"inlineSuggestCount": 3,
-		"debug.overrideEngine": "copilot",
-		"debug.testOverrideProxyUrl": "",
-		"debug.overrideProxyUrl": "",
-		"length": 500
+		"debug.overrideEngine": "copilot-chat",
+		"length": 3600,
+		"temperature": "0.1",
+		"top_p": 1,
+		"inlineSuggestCount": 5,
+		"listCount": 15,
+		"debug.showScores": true
 	},
-	"github.copilot.conversation.localeOverride": "de",
-	"github.copilot.renameSuggestions.triggerAutomatically": true,
-	"files.associations": {
-		"*.lua": "luau",
-		"*.luau": "luau",
-		"*.server.lua": "luau",
-		"*.client.lua": "luau",
-		"*.rbxs": "luau",
-		"*.rbxlx": "xml",
-		"*.rbxmx": "xml"
-	},
-	"luau-lsp.require.mode": "relativeToFile",
-	"luau-lsp.diagnostics.enable": true,
-	"luau-lsp.diagnostics.workspace": true,
-	"luau-lsp.completion.imports.enabled": true,
-	"luau-lsp.completion.imports.suggestServices": true,
-	"luau-lsp.completion.imports.suggestRequires": true,
-	"luau-lsp.hover.enabled": true,
-	"luau-lsp.signatureHelp.enabled": true,
-	"luau-lsp.inlayHints.parameterNames": "all",
-	"luau-lsp.inlayHints.variableTypes": true,
-	"luau-lsp.platform.type": "roblox",
-	"luau-lsp.types.robloxSecurityLevel": "None",
-	"luau-lsp.completion.autocompleteEnd": true,
-	"luau-lsp.completion.fillCallParens": true,
-	"luau-lsp.completion.addTabstopAfterCallParens": true,
-	"luau-lsp.completion.imports.requireStyle": "alwaysRelative",
-	"stylua.searchParentDirectories": true,
-	"stylua.verify": true,
-	"[luau]": {
-		"editor.defaultFormatter": "JohnnyMorganz.stylua",
-		"editor.formatOnSave": true,
-		"editor.tabSize": 4,
-		"editor.insertSpaces": true
-	},
-	"[lua]": {
-		"editor.defaultFormatter": "JohnnyMorganz.stylua",
-		"editor.formatOnSave": true,
-		"editor.tabSize": 4,
-		"editor.insertSpaces": true
-	},
-	"selene.configLocation": "./selene.toml",
-	"rojo.enableRichPresence": true,
-	"rojo.openScriptsExternally": true,
+	"github.copilot.nextEditSuggestions.enabled": true,
+	"github.copilot.nextEditSuggestions.fixes": true,
 	"editor.inlineSuggest.enabled": true,
-	"editor.inlineSuggest.showToolbar": "onHover",
+	"editor.inlineSuggest.showToolbar": "always",
 	"editor.suggestSelection": "first",
 	"editor.quickSuggestions": {
 		"other": "on",
-		"comments": "off",
+		"comments": "on",
 		"strings": "on"
 	},
-	"editor.quickSuggestionsDelay": 10,
+	"editor.quickSuggestionsDelay": 200,
 	"editor.acceptSuggestionOnEnter": "on",
 	"editor.tabCompletion": "on",
-	"editor.wordBasedSuggestions": "allDocuments",
-	"editor.wordBasedSuggestionsMode": "matchingDocuments",
 	"editor.parameterHints.enabled": true,
-	"editor.suggest.snippetsPreventQuickSuggestions": true,
 	"editor.suggest.localityBonus": true,
-	"editor.suggest.shareSuggestSelections": true,
-	"editor.suggest.showStatusBar": true,
-	"editor.bracketPairColorization.enabled": true,
-	"editor.autoClosingBrackets": "always",
-	"editor.autoClosingQuotes": "always",
-	"files.autoSave": "onFocusChange",
-	"files.trimTrailingWhitespace": true,
-	"files.insertFinalNewline": true,
-	"files.eol": "\n",
-	"search.exclude": {
-		"**/build": true,
-		"**/dist": true,
-		"**/.rojo_cache": true,
-		"**/sourcemap.json": true
+	"[lua]": {
+		"editor.defaultFormatter": "JohnnyMorganz.stylua",
+		"editor.formatOnSave": true,
 	},
-	"files.watcherExclude": {
-		"**/.rojo_cache/**": true,
-		"**/build/**": true
+	"[luau]": {
+		"editor.defaultFormatter": "JohnnyMorganz.stylua",
+		"editor.formatOnSave": true,
 	},
-	"workbench.editor.enablePreview": false,
-	"explorer.fileNesting.enabled": true,
-	"explorer.fileNesting.patterns": {
-		"*.lua": "${capture}.server.lua, ${capture}.client.lua",
-		"default.project.json": "rojo.toml, aftman.toml"
+	"luau-lsp.platform.type": "roblox",
+	"luau-lsp.completion.enabled": true,
+	"files.associations": {
+		"*.server.lua": "luau",
+		"*.client.lua": "luau",
+		"*.module.lua": "luau"
 	},
-	"editor.codeActionsOnSave": {
-		"source.fixAll": "explicit"
+	"editor.semanticHighlighting.enabled": true,
+	"robloxLsp.completion.endAutocompletion": true,
+	"robloxLsp.hint.enable": true,
+	"files.autoSave": "afterDelay",
+	"editor.defaultFormatter": "JohnnyMorganz.luau-lsp",
+	"git.enableSmartCommit": true,
+	"luau-lsp.completion.imports.enabled": true,
+	"github.copilot.chat.codesearch.enabled": true,
+	"inlineChat.enableV2": true,
+	"github.copilot.chat.agent.thinkingTool": true,
+	"github.copilot.chat.agent.autoFix": true,
+	"github.copilot.chat.copilotDebugCommand.enabled": true,
+	"github.copilot.chat.agent.currentEditorContext.enabled": true,
+	"github.copilot.chat.editor.temporalContext.enabled": true,
+	"github.copilot.chat.codeGeneration.useInstructionFiles": true,
+	"github.copilot.chat.agent.runTasks": true,
+	"github.copilot.chat.summarizeAgentConversationHistory.enabled": true,
+	"github.copilot.chat.scopeSelection": true,
+	"github.copilot.chat.edits.temporalContext.enabled": true,
+	"github.copilot.chat.generateTests.codeLens": true,
+	"github.copilot.chat.notebook.followCellExecution.enabled": true,
+	"github.copilot.chat.terminalChatLocation": "terminal",
+	"workbench.iconTheme": "material-icon-theme",
+	"editor.fontSize": 16,
+	"redhat.telemetry.enabled": true,
+	"[markdown]": {
+		"editor.defaultFormatter": "yzhang.markdown-all-in-one"
 	},
-	"editor.maxTokenizationLineLength": 20000,
-	"telemetry.telemetryLevel": "error"
+	"[jsonc]": {
+		"editor.defaultFormatter": "vscode.json-language-features"
+	},
+	"[json]": {
+		"editor.defaultFormatter": "vscode.json-language-features"
+	},
+	"[yaml]": {
+		"editor.defaultFormatter": "redhat.vscode-yaml"
+	},
+	"luau-lsp.sourcemap.enabled": true,
+	"luau-lsp.sourcemap.autogenerate": true,
+	"luau-lsp.sourcemap.rojoProjectFile": "default.project.json",
+	"luau-lsp.sourcemap.generatorCommand": "robloxstu",
+	"luau-lsp.sourcemap.rojoPath": "roblox studio",
+	"luau-lsp.sourcemap.useVSCodeWatcher": true,
+	"python.analysis.typeCheckingMode": "basic",
+	"editor.formatOnSave": true,
+	"github.codespaces.defaultExtensions": [
+		"GitHub.codespaces",
+		"GitHub.vscode-pull-request-github"
+	]
 }
